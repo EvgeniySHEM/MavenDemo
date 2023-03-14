@@ -5,10 +5,10 @@ import org.junit.Test;
 
 public class Vector2DTest {
     private final double DELTA =  1e-9; //1e-9 точность для вещественных типов 0,000_000_0001
-    private static Vector2D v1;
+    private Vector2D v1;
 
-    @BeforeClass
-    public static void createNewVector2D() {
+    @Before
+    public void createNewVector2D() {
         v1 = new Vector2D();
     }
     @Test
